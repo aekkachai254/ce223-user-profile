@@ -97,10 +97,12 @@ button:hover, a:hover {
 <h2 style="text-align:center">User Profile Card</h2>
 
 <div class="card">
-  <img src="/w3images/team2.jpg" alt="AEKK" style="width:100%">
-  <h1>Aekkachai Dewkada</h1>
+  <img src="Piere.person.jpg" alt="AEKK" style="width:100%">
+  <h1 class="popup" onclick="myFunction()">Aekkachai Dewkada <span
+     class="popuptext" id="myPopup">Hello, It's me.....</span></h1>
   <p class="title">Lecture, Computer Engineering</p>
-  <p>1630902649</p>
+  <p class="popup" onclick="myFunction1()">1630902649 <span
+    class="popuptext" id="myPopup1">I'm so handsome</span></p>
   <p>Bangkok university</p>
   <div style="margin: 24px 0;">
     <a href="#"><i class="fa fa-dribbble"></i></a> 
@@ -116,6 +118,10 @@ button:hover, a:hover {
   // When the user clicks on <div>, open the popup
   function myFunction() {
     var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  }
+  function myFunction1() {
+    var popup = document.getElementById("myPopup1");
     popup.classList.toggle("show");
   }
 </script>
